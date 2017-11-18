@@ -1,9 +1,6 @@
 # Web Audio Metronome
 
-This application shows how to use a collaboration between a setTimeout scheduler and the Web Audio scheduler to properly implement rock-solid timing for audio applications.
+This is a new project - you can see it in action here ...
 
-Check it out, feel free to submit issues or requests, fork, submit pull requests, etc.
+http://seanmcdonstart.com/Projects/micProject2017/index.html
 
-The live app is at http://webaudiodemos.appspot.com/metronome/index.html.
-
--Chris
