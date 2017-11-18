@@ -1,0 +1,174 @@
+#controls {
+	font-family:arial;
+	font-size:24px;
+	font-weight:bold;
+	margin: 15px;
+}
+
+#controls * {
+	margin: 5px;
+	display:inline-block;
+	
+}
+
+ #vexCanvas {
+      background: #eed;
+      padding: 10px;
+      border: 10px solid #ddc;
+    }
+
+canvas{
+	/*border-right: 8px double black;
+ border-left:1px solid black;	
+	border-bottom:1px solid black;*/
+}
+
+.beat:nth-child(1){ margin-left:4px;}
+
+/*
+.barline-right{
+ border-right:1px solid black;
+}
+
+.barline-left{
+ border-left:1px solid black;
+}
+
+
+.doubleBarline{
+	border-right: 8px double black;
+}
+*/
+
+.beat{	
+  vertical-align: bottom;
+		text-align:center;
+		padding-top:30px;
+		font-weight:bold;
+  background:;
+  display:inline-block;
+  /* background-image:url("file:///C:/Users/smcdonald/Desktop/metronome-master/staff.png"); */
+  background-position: 0px 0px; 
+	 background-size: 100px 100px;
+	 background-repeat:no-repeat;
+  margin-left:-4px;
+}		
+
+.container{
+	text-align:center;
+}
+
+.down{
+  animation: flashDown .2s;
+}
+
+@keyframes flashDown{
+  0%{background:blue;}
+
+  50%{background:;}
+}
+
+.up{
+  animation: flashUp .2s;
+}
+
+@keyframes flashUp{
+  0%{background:gold;}
+
+  50%{background:;}
+}
+
+.sixteenth{
+  animation: flashSixteenth .2s;
+}
+
+@keyframes flashSixteenth{
+  0%{background:red;}
+
+  50%{background:;}
+}
+
+
+
+.sound-block{
+ display:inline-block;
+	height:20px;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+  font-size:.7em;
+  color:white;
+	vertical-align: bottom;
+ position:absolute;
+}
+
+.play {
+	-moz-box-shadow:inset 0px 20px 26px 0px #b6cde3;
+	-webkit-box-shadow:inset 0px 20px 26px 0px #b6cde3;
+	box-shadow:inset 0px 20px 26px 0px #b6cde3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	background-color:#79bbff;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	color:#ffffff;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 6px #000000;
+	width: 80px;
+	text-align: center;
+}
+
+.play:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	background-color:#378de5;
+}
+
+.play:active {
+	position:relative;
+	top:1px; left: 1px;
+}
+
+#showTempo { 
+	display: inline-block;
+	width: 45px; 
+}
+
+#showSwing { 
+	display: inline-block;
+	width: 40px; 
+}
+
+* {
+    -webkit-user-select: none;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+body {
+    overflow: auto;
+}
+
+/* My additions to vexflow... */
+
+#detector, #vexCanvas { display:inline-block; }
+
+/*THIS IMPORTED FROM PITCH DETECTOR!*/
+
+   #page-2-insert{ border-top:1px solid black; padding-top:20px; text-align:center; }
+			#note { font-size: 164px; }
+			div.confident { color: black; }
+			div.vague { color: lightgrey; }
+			#note { display: inline-block; height:180px; text-align: left; }
+			#detector { width: 300px; height: 300px; border: 4px solid gray; border-radius: 8px; text-align: center; padding-top: 10px; margin-left:auto; margin-right:auto;}
+			#output { width: 300px; height: 42px; }
+			#flat { display: none; }
+			#sharp { display: none; }
+			.flat #flat { display: inline; }
+			.sharp #sharp { display: inline; }
+/*END IMPORT!!*/
